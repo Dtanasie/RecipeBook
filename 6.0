@@ -1,0 +1,7 @@
+C:\Users\dtanasie\AppData\Roaming\npm\ng -> C:\Users\dtanasie\AppData\Roaming\npm\node_modules\@angular\cli\bin\ng
+
+> @angular/cli@12.2.2 postinstall C:\Users\dtanasie\AppData\Roaming\npm\node_modules\@angular\cli
+> node ./bin/postinstall/script.js
+
++ @angular/cli@12.2.2
+updated 10 packages in 18.229s

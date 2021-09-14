@@ -1,0 +1,21 @@
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <div class="row">  
+        <div class="col-md-5">  
+            <app-recipes-list
+            (recipeWasSelected)="selectedRecipe = $event"
+            ></app-recipes-list>
+        </div>
+        <div class="col-md-7">
+              <app-recipes-detail *ngIf="selectedRecipe; else infoText" [recipe]="selectedRecipe"></app-recipes-detail> 
+              <ng-template #infoText>
+                  <p>Please select a Recipe!</p>
+              </ng-template>
+        </div>
+     </div>
+
+ 
+
+
+
